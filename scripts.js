@@ -36,7 +36,7 @@ toggleTheme.addEventListener('click', () => {
 })
 
 
-let display = "";
+let display = '';
 let result = 0;
 let finished = false;
 // to detect inserting two operators in row
@@ -46,8 +46,8 @@ let uOperator = false;
 // equals clicked
 let equalsClicked = false;
 
-let num1 = "0",
-  num2 = "0",
+let num1 = '0',
+  num2 = '0',
   operator;
 
 btns.forEach(function (btn) {
@@ -138,13 +138,13 @@ btns.forEach(function (btn) {
 });
 
 function reset() {
-  display = "";
+  display = '';
   result = 0;
   finished = false;
   operatorInput = false;
-  num1 = "0";
-  num2 = "0";
-  operator = "";
+  num1 = '0';
+  num2 = '0';
+  operator = '';
   document.getElementById('screen-calculation').value = display;
   document.getElementById('screen-result').value = result;
 }
