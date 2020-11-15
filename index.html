@@ -5,20 +5,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
+  <link href="icons/style.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
+  <main class="calc">
+    <div class="calc-wrapper">
+      <div class="calc-top">
+        <div class="calc-header">
+          <span class="icon-brightness-contrast header-icon theme-toggle"></span>
+          <span class="icon-circle-right header-icon expand-toggle"></span>
+          <span class="icon-circle-left header-icon collapse-toggle hidden"></span>
+        </div>
 
-  <div class="calc-wrapper">
-    <div class="calc-screen">
+        <div class="calc-screen">
+          <input class="screen-result" type="text" id="screen-result" placeholder="0" disabled>
+          <input class="screen-calculation" id="screen-calculation" type="text" placeholder="" disabled>
+        </div>
+      </div>
 
+      <div class="calc-keyboard">
+        <div class="calc-keyboard-col">
+          <button class="btn operator" type="button" data-ops="clear">CE</button>
+          <button class="btn num" type="button" data-num="7">7</button>
+          <button class="btn num" type="button" data-num="4">4</button>
+          <button class="btn num" type="button" data-num="1">1</button>
+          <button class="btn num" type="button" data-num="0">0</button>
+        </div>
+
+        <div class="calc-keyboard-col">
+          <button class="btn operator" type="button" data-uops="+/-">+/-</button>
+          <button class="btn num" type="button" data-num="8">8</button>
+          <button class="btn num" type="button" data-num="5">5</button>
+          <button class="btn num" type="button" data-num="2">2</button>
+          <button class="btn num" type="button" data-num=".">.</button>
+        </div>
+
+        <div class="calc-keyboard-col">
+          <button class="btn operator" data-ops="%" type="button">%</button>
+          <button class="btn num" data-num="9" type="button">9</button>
+          <button class="btn num" data-num="6" type="button">6</button>
+          <button class="btn num" data-num="3" type="button">3</button>
+          <button class="btn operator" data-ops="=" type="button">=</button>
+        </div>
+
+        <div class="calc-keyboard-col">
+          <button class="btn operator" data-ops="/" type="button">/</button>
+          <button class="btn operator" data-ops="*" type="button">*</button>
+          <button class="btn operator" data-ops="-" type="button">-</button>
+          <button class="btn btn-plus operator" data-ops="+" type="button">+</button>
+        </div>
+
+        <div class="calc-keyboard-col expand-col hidden">
+          <button class="btn operator" data-uops="sin" type="button">sin</button>
+          <button class="btn operator" data-uops="cos" type="button">cos</button>
+          <button class="btn operator" data-uops="tan" type="button">tan</button>
+          <button class="btn operator" data-uops="ln" type="button">ln</button>
+          <button class="btn operator" data-uops="square" type="button">&#8730;</button>
+        </div>
+
+      </div>
     </div>
+  </main>
 
-    <div class="calc-keyboard">
-
-    </div>
-  </div>
   <script src="scripts.js"></script>
 </body>
 

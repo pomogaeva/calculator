@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #beeaf2;
+}
+
+.calc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.calc-wrapper {
+  width: 300px;
+  height: 500px;
+  padding: 15px;
+  background-color: #1a1b28;
+  box-shadow: 0 0 10px #000;
+}
+
+.calc-wrapper.light {
+  background-color: #fff;
+}
+
+.extended {
+  width: 30%;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.header-icon {
+  font-size: 24px;
+  color: #757575;
+  cursor: pointer;
+}
+
+.header-icon:active {
+  color: #beeaf2;
+}
+
+.calc-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen-result,
+.screen-calculation {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: right;
+}
+
+.screen-result {
+  height: 60px;
+  font-size: 36px;
+}
+
+.screen-calculation {
+  height: 40px;
+  font-size: 22px;
+}
+
+.calc-keyboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-keyboard-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #1e2435;
+  cursor: pointer;
+}
+
+.btn.light {
+  color: #000;
+  background-color: #f2f8fc;
+}
+
+.btn-plus {
+  height: 115px;
+}
+
+.btn:active {
+  background-color: #191d27;
+}
+
+.btn.light:active {
+  background-color: #d0dce4;
+}
+
+.operator {
+  background-color: #65cddd;
+}
+
+.operator:active {
+  background-color: #4ee7ff;
+}
